@@ -43,6 +43,10 @@ class Solution {
             return list1
         }
         
+        if list1 == nil {
+            return list2
+        }
+        
         return nil
     }
 }
@@ -64,6 +68,15 @@ final class MergeTwoListsTests: XCTestCase {
         let result = sut.mergeTwoLists(firstList, nil)
         
         XCTAssertEqual(result, firstList)
+    }
+    
+    func test_mergeTwoLists_returnsSecondListOnFirstListIsNil() {
+        let secondList = ListNode(1)
+        let sut = Solution()
+        
+        let result = sut.mergeTwoLists(nil, secondList)
+        
+        XCTAssertEqual(result, secondList)
     }
 
 }
