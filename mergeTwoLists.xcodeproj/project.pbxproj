@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A578E36297105C70000B3D4 /* mergeTwoLists.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9A578E35297105C70000B3D4 /* mergeTwoLists.docc */; };
 		9A578E3C297105C70000B3D4 /* mergeTwoLists.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A578E31297105C70000B3D4 /* mergeTwoLists.framework */; };
-		9A578E41297105C70000B3D4 /* mergeTwoListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A578E40297105C70000B3D4 /* mergeTwoListsTests.swift */; };
+		9A578E41297105C70000B3D4 /* MergeTwoListsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A578E40297105C70000B3D4 /* MergeTwoListsTests.swift */; };
 		9A578E42297105C70000B3D4 /* mergeTwoLists.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A578E34297105C70000B3D4 /* mergeTwoLists.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,7 +28,7 @@
 		9A578E34297105C70000B3D4 /* mergeTwoLists.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mergeTwoLists.h; sourceTree = "<group>"; };
 		9A578E35297105C70000B3D4 /* mergeTwoLists.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = mergeTwoLists.docc; sourceTree = "<group>"; };
 		9A578E3B297105C70000B3D4 /* mergeTwoListsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mergeTwoListsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A578E40297105C70000B3D4 /* mergeTwoListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mergeTwoListsTests.swift; sourceTree = "<group>"; };
+		9A578E40297105C70000B3D4 /* MergeTwoListsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTwoListsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +80,7 @@
 		9A578E3F297105C70000B3D4 /* mergeTwoListsTests */ = {
 			isa = PBXGroup;
 			children = (
-				9A578E40297105C70000B3D4 /* mergeTwoListsTests.swift */,
+				9A578E40297105C70000B3D4 /* MergeTwoListsTests.swift */,
 			);
 			path = mergeTwoListsTests;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A578E41297105C70000B3D4 /* mergeTwoListsTests.swift in Sources */,
+				9A578E41297105C70000B3D4 /* MergeTwoListsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

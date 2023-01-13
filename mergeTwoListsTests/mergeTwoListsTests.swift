@@ -1,5 +1,5 @@
 //
-//  mergeTwoListsTests.swift
+//  MergeTwoListsTests.swift
 //  mergeTwoListsTests
 //
 //  Created by arifinfrds.engineer on 13/01/23.
@@ -39,7 +39,7 @@ class Solution {
     }
 }
 
-final class mergeTwoListsTests: XCTestCase {
+final class MergeTwoListsTests: XCTestCase {
 
     func test_mergeTwoLists_returnsNilOnBothListNil() {
         let sut = Solution()
