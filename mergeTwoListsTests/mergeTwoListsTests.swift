@@ -47,7 +47,11 @@ class Solution {
             return list2
         }
         
-        if list1?.val == list2?.val {
+        guard let list1 = list1, let list2 = list2 else {
+            return nil
+        }
+        
+        if list1.val == list2.val {
             return ListNode(1, ListNode(1, nil))
         }
         
