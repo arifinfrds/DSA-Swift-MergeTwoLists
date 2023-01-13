@@ -122,5 +122,15 @@ final class MergeTwoListsTests: XCTestCase {
         
         XCTAssertEqual(result, ListNode(1, ListNode(2, nil)))
     }
+    
+    func test_mergeTwoLists_returnsCorrectListOnMultipleValuesList() {
+        let firstList = ListNode(1, .init(2, .init(4, nil)))
+        let secondList = ListNode(1, .init(3, .init(4, nil)))
+        let sut = Solution()
+        
+        let result = sut.mergeTwoLists(firstList, secondList)
+        
+        XCTAssertEqual(result, ListNode(1, .init(1, .init(2, .init(3, .init(4, .init(4, nil)))))))
+    }
 
 }
