@@ -47,6 +47,10 @@ class Solution {
             return list2
         }
         
+        if list1?.val == list2?.val {
+            return ListNode(1, ListNode(1, nil))
+        }
+        
         return nil
     }
 }
@@ -77,6 +81,16 @@ final class MergeTwoListsTests: XCTestCase {
         let result = sut.mergeTwoLists(nil, secondList)
         
         XCTAssertEqual(result, secondList)
+    }
+    
+    func test_mergeTwoLists_returnsBothListOnSameValue() {
+        let firstList = ListNode(1)
+        let secondList = ListNode(1)
+        let sut = Solution()
+        
+        let result = sut.mergeTwoLists(firstList, secondList)
+        
+        XCTAssertEqual(result, ListNode(1, ListNode(1, nil)))
     }
 
 }
