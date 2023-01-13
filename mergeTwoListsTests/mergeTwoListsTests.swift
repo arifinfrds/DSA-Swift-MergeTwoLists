@@ -38,6 +38,11 @@ extension ListNode: Equatable {
 
 class Solution {
     func mergeTwoLists(_ list1: ListNode?, _ list2: ListNode?) -> ListNode? {
+        
+        if list2 == nil {
+            return list1
+        }
+        
         return nil
     }
 }
@@ -50,6 +55,15 @@ final class MergeTwoListsTests: XCTestCase {
         let result = sut.mergeTwoLists(nil, nil)
         
         XCTAssertEqual(result, nil)
+    }
+    
+    func test_mergeTwoLists_returnsFirstListOnSecondListIsNil() {
+        let firstList = ListNode(1)
+        let sut = Solution()
+        
+        let result = sut.mergeTwoLists(firstList, nil)
+        
+        XCTAssertEqual(result, firstList)
     }
 
 }
