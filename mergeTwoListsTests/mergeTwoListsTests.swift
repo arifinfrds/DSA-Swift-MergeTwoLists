@@ -60,6 +60,9 @@ class Solution {
         if list1.val < list2.val {
             result = list1
             result.next = mergeTwoLists(list1.next, list2)
+        } else {
+            result = list2
+            result.next = mergeTwoLists(list1, list2.next)
         }
         
         return result
@@ -107,6 +110,16 @@ final class MergeTwoListsTests: XCTestCase {
     func test_mergeTwoLists_returnsFirstListThenSecondListOnFirstListIsSmaller() {
         let firstList = ListNode(1)
         let secondList = ListNode(2)
+        let sut = Solution()
+        
+        let result = sut.mergeTwoLists(firstList, secondList)
+        
+        XCTAssertEqual(result, ListNode(1, ListNode(2, nil)))
+    }
+    
+    func test_mergeTwoLists_returnsSecondListThenFirstListOnSecondListIsSmaller() {
+        let firstList = ListNode(2)
+        let secondList = ListNode(1)
         let sut = Solution()
         
         let result = sut.mergeTwoLists(firstList, secondList)
