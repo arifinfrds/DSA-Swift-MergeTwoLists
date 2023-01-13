@@ -9,10 +9,7 @@ import XCTest
 @testable import mergeTwoLists
 
 // Definition for singly-linked list.
-public class ListNode: Equatable {
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs.val == rhs.val && lhs.next == rhs.next
-    }
+public class ListNode {
     
     public var val: Int
     public var next: ListNode?
@@ -30,6 +27,12 @@ public class ListNode: Equatable {
     public init(_ val: Int, _ next: ListNode?) {
         self.val = val
         self.next = next
+    }
+}
+
+extension ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.val == rhs.val && lhs.next == rhs.next
     }
 }
 
